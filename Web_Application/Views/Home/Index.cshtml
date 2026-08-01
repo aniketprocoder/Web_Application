@@ -14,3 +14,308 @@
         </a>
     </p>
 </div>
+<div class="bubble-letter" style="
+                position: relative;
+                width: 44px; height: 44px;
+                display: flex; align-items: center; justify-content: center;
+                border-radius: 50%;
+                background:
+                    radial-gradient(circle at 32% 28%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.25) 18%, rgba(170,120,255,0.35) 50%, rgba(70,30,140,0.65) 100%);
+                box-shadow:
+                    inset 0 0 14px rgba(255,255,255,0.4),
+                    inset 0 -6px 10px rgba(70,30,140,0.65),
+                    0 0 18px rgba(210,170,255,0.6);
+                border: 1.5px solid rgba(255,255,255,0.55);
+                animation: bubbleFloat 2.6s ease-in-out 0.8999999999999999s infinite;
+            ">
+    <span style="
+                    position: relative; z-index: 2;
+                    font-weight: 900; font-size: 22px;
+                    color: #ffffff;
+                    text-shadow:
+                        0 0 8px rgba(125,249,255,0.9),
+                        0 2px 3px rgba(0,30,80,0.7);
+                    letter-spacing: 0;
+                ">E</span>
+    <span style="
+                    position: absolute; top: 6px; left: 9px;
+                    width: 10px; height: 6px;
+                    background: rgba(255,255,255,0.85);
+                    border-radius: 50%;
+                    filter: blur(1px);
+                    z-index: 3;
+                "></span>
+</div>
+
+/// New start
+@* 
+<div id="bubbles-start-overlay" style="position: fixed; inset: 0px; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Fredoka, Nunito, &quot;Segoe UI&quot;, sans-serif; color: white; background: linear-gradient(rgba(46, 196, 216, 0.25) 0%, rgba(10, 80, 110, 0.55) 45%, rgba(0, 15, 25, 0.85) 100%); user-select: none;">
+    <div id="fish-layer" style="position: absolute; inset: 121.667px 0px 0px; overflow: hidden; pointer-events: none; z-index: 0; height: 393.667px;">
+        <div class="start-fish" style="top: 164.128px; animation: 63.2138s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.560927792427353s ease-in-out infinite;">
+                <svg width="39.99691845296575" height="22" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.525594s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#d94f86" stroke="#a8336a" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#ff8fb8" stroke="#a8336a" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ffd9e6" opacity="0.75"></ellipse><g class="fin" style="animation: 1.65265s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#a8336a" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#a8336a" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#a8336a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#a8336a" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 149.26px; animation: 53.7865s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.921572212124122s ease-in-out infinite;">
+                <svg width="57.454819226573335" height="32" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.576901s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.33884s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 252.969px; animation: 42.298s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.0458090131415485s ease-in-out infinite;">
+                <svg width="41.086158314812735" height="23" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.556853s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#2a7fc8" stroke="#1b5a96" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#6ec8ff" stroke="#1b5a96" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#dff1ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.23844s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#1b5a96" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#1b5a96" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#1b5a96" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#1b5a96" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 252.059px; animation: 50.9507s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.1806375832024467s ease-in-out infinite;">
+                <svg width="35.333694838227885" height="19" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.616492s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#e07a1a" stroke="#c95a0a" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#ffb04a" stroke="#c95a0a" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ffe2b3" opacity="0.75"></ellipse><g class="fin" style="animation: 1.69314s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#c95a0a" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#c95a0a" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#c95a0a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#c95a0a" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 104.312px; animation: 58.2263s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.2499821700360862s ease-in-out infinite;">
+                <svg width="50.72377981706444" height="28" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.490543s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.659s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 129.093px; animation: 62.5184s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 2.515196626140954s ease-in-out infinite;">
+                <svg width="55.022194733476645" height="30" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.512618s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#7e4ed8" stroke="#5a2fa8" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#c9a6ff" stroke="#5a2fa8" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ece0ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.59171s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#5a2fa8" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#5a2fa8" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#5a2fa8" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#5a2fa8" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 71.5017px; animation: 61.8646s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.467158721763868s ease-in-out infinite;">
+                <svg width="42.954192731102026" height="24" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.689308s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.36728s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 241.857px; animation: 48.2625s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.8517764078331087s ease-in-out infinite;">
+                <svg width="51.795524971118724" height="28" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.563885s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#2a7fc8" stroke="#1b5a96" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#6ec8ff" stroke="#1b5a96" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#dff1ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.68637s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#1b5a96" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#1b5a96" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#1b5a96" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#1b5a96" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 63.4334px; animation: 56.5721s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 2.4503278496029144s ease-in-out infinite;">
+                <svg width="38.69924307011035" height="21" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.670653s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.35023s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 216.544px; animation: 57.6585s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.539973498352794s ease-in-out infinite;">
+                <svg width="38.90508687753327" height="21" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.67812s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#2a7fc8" stroke="#1b5a96" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#6ec8ff" stroke="#1b5a96" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#dff1ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.48356s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#1b5a96" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#1b5a96" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#1b5a96" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#1b5a96" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div>
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:130px;letter-spacing:2px;font-weight:500;">© 2026 TypingMaster.com</div>
+    <div id="choose-label" style="font-size:18px;color:rgba(255,255,255,0.75);margin-top:18px;margin-bottom:40px;font-weight:500;">choose how you want to play</div>
+
+    <div style="display:flex;gap:32px;margin-bottom:48px;">
+        <div class="mode-card" data-mode="letters" style="
+                cursor:pointer; user-select:none;
+                width: 260px; padding: 30px 24px;
+                background: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.18) 0%, rgba(74,158,255,0.18) 35%, rgba(10,40,80,0.6) 100%);
+                border: 2px solid rgba(125,249,255,0.5);
+                border-radius: 22px;
+                box-shadow: 0 8px 32px rgba(74,158,255,0.35), inset 0 0 24px rgba(255,255,255,0.08);
+                text-align: center;
+                display: flex; flex-direction: column;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            ">
+            <div style="font-size:64px;margin-bottom:8px;">🔤</div>
+            <div style="font-size:30px;font-weight:800;letter-spacing:3px;margin-bottom:6px;">LETTERS</div>
+            <div style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:500;">
+                Single letters in bubbles.<br>
+                Start from the home row and unlock the full keyboard.<br>
+                Keep fingers on home row!
+            </div>
+            <div style="margin-top:14px;font-size:13px;letter-spacing:2px;color:#7df9ff;font-weight:700;">BEGINNER · LEVELS 1–11</div>
+            <div style="margin-top:auto;padding-top:18px;font-size:12px;letter-spacing:3px;color:#9fb6c4;font-weight:600;">HIT SPACE</div>
+        </div>
+
+        <div class="mode-card" data-mode="words" style="
+                cursor:pointer; user-select:none;
+                width: 260px; padding: 30px 24px;
+                background: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.18) 0%, rgba(200,130,255,0.18) 35%, rgba(40,15,80,0.6) 100%);
+                border: 2px solid rgba(200,130,255,0.5);
+                border-radius: 22px;
+                box-shadow: 0 8px 32px rgba(168,85,247,0.3), inset 0 0 24px rgba(255,255,255,0.08);
+                text-align: center;
+                display: flex; flex-direction: column;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            ">
+            <div style="font-size:64px;margin-bottom:8px;">✨</div>
+            <div style="font-size:30px;font-weight:800;letter-spacing:3px;margin-bottom:6px;">WORDS</div>
+            <div style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:500;">
+                Type whole words to shatter bubbles.<br>
+                Flow-typing, combo chains, full skill ceiling.
+            </div>
+            <div style="margin-top:14px;font-size:13px;letter-spacing:2px;color:#d4a8ff;font-weight:700;">EXPERT · LEVELS 12–15</div>
+            <div style="margin-top:auto;padding-top:18px;font-size:12px;letter-spacing:3px;color:#9fb6c4;font-weight:600;">HIT ENTER</div>
+        </div>
+    </div>
+
+    <div style="font-size:14px;color:rgba(255,255,255,0.5);font-weight:500;letter-spacing:1px;">tap a mode to dive in</div>
+
+    <style>
+        .mode-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            border-color: rgba(255,255,255,0.85) !important;
+            box-shadow: 0 14px 40px rgba(125,249,255,0.45), inset 0 0 28px rgba(255,255,255,0.15) !important;
+        }
+    </style>
+    <style>
+        /* Keep foreground content above the fish layer */
+        #bubbles-start-overlay > *:not(#fish-layer) {
+            position: relative;
+            z-index: 1;
+        }
+     
+
+        .start-fish {
+            position: absolute;
+            left: -160px;
+            will-change: transform;
+            filter: drop-shadow(0 3px 8px rgba(0,30,60,0.45));
+            opacity: 0.9;
+        }
+
+            .start-fish .fish-bob {
+                display: inline-block;
+                will-change: transform;
+            }
+
+            .start-fish svg .tail {
+                transform-origin: 100% 50%;
+                transform-box: fill-box;
+                will-change: transform;
+            }
+
+            .start-fish svg .fin {
+                transform-origin: 50% 100%;
+                transform-box: fill-box;
+                will-change: transform;
+            }
+    </style>
+</div> *@
+
+/// Another one new start  
+
+<div id="bubbles-start-overlay" style="position: fixed; inset: 0px; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Fredoka, Nunito, &quot;Segoe UI&quot;, sans-serif; color: white; background: linear-gradient(rgba(46, 196, 216, 0.25) 0%, rgba(10, 80, 110, 0.55) 45%, rgba(0, 15, 25, 0.85) 100%); user-select: none;">
+    <div id="fish-layer" style="position: absolute; inset: 156.667px 0px 0px; overflow: hidden; pointer-events: none; z-index: 0; height: 428.667px;">
+        <div class="start-fish" style="top: 294.232px; animation: 41.9299s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.8273162050131395s ease-in-out infinite;">
+                <svg width="41.96712295195262" height="23" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.562702s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.88693s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 191.283px; animation: 55.7784s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.546469882389212s ease-in-out infinite;">
+                <svg width="33.89398185837622" height="19" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.567326s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#2a7fc8" stroke="#1b5a96" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#6ec8ff" stroke="#1b5a96" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#dff1ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.6245s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#1b5a96" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#1b5a96" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#1b5a96" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#1b5a96" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 94.044px; animation: 40.0693s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.7910406147793134s ease-in-out infinite;">
+                <svg width="54.1986346824643" height="30" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.453165s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#7e4ed8" stroke="#5a2fa8" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#c9a6ff" stroke="#5a2fa8" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ece0ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.3198s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#5a2fa8" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#5a2fa8" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#5a2fa8" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#5a2fa8" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 293.777px; animation: 44.2317s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.098306454764458s ease-in-out infinite;">
+                <svg width="50.5732699125946" height="28" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.534329s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#e07a1a" stroke="#c95a0a" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#ffb04a" stroke="#c95a0a" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ffe2b3" opacity="0.75"></ellipse><g class="fin" style="animation: 1.90152s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#c95a0a" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#c95a0a" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#c95a0a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#c95a0a" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 314.693px; animation: 48.2087s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 2.444020057907963s ease-in-out infinite;">
+                <svg width="50.13654720184614" height="28" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.459146s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#7e4ed8" stroke="#5a2fa8" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#c9a6ff" stroke="#5a2fa8" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ece0ff" opacity="0.75"></ellipse><g class="fin" style="animation: 1.43444s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#5a2fa8" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#5a2fa8" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#5a2fa8" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#5a2fa8" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 247.201px; animation: 53.8306s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.3027848708661884s ease-in-out infinite;">
+                <svg width="48.62675489322771" height="27" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.652031s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#e07a1a" stroke="#c95a0a" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#ffb04a" stroke="#c95a0a" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#ffe2b3" opacity="0.75"></ellipse><g class="fin" style="animation: 1.78282s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#c95a0a" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#c95a0a" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#c95a0a" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#c95a0a" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div><div class="start-fish" style="top: 215.953px; animation: 62.8215s linear 0s 1 normal forwards running fish-swim;">
+            <span class="fish-bob" style="animation: fish-bob 3.113804575964625s ease-in-out infinite;">
+                <svg width="36.03553959820748" height="20" viewBox="0 0 120 66" xmlns="http://www.w3.org/2000/svg"><g class="tail" style="animation: 0.540354s ease-in-out 0s infinite normal none running fish-tail;"><path d="M 38 32 Q 18 14 8 18 Q 16 32 8 46 Q 18 50 38 32 Z" fill="#3f9a4f" stroke="#2a7035" stroke-width="1.2" stroke-linejoin="round"></path></g><ellipse cx="66" cy="33" rx="38" ry="19" fill="#9be38a" stroke="#2a7035" stroke-width="1.2"></ellipse><ellipse cx="68" cy="42" rx="28" ry="7" fill="#e1f7d8" opacity="0.75"></ellipse><g class="fin" style="animation: 1.59313s ease-in-out 0s infinite normal none running fish-fin;"><path d="M 56 18 Q 66 6 78 16 Q 70 18 60 20 Z" fill="#2a7035" opacity="0.85"></path></g><path d="M 62 40 Q 70 50 80 44 Q 74 40 62 40 Z" fill="#2a7035" opacity="0.75"></path><path d="M 88 24 Q 84 33 88 42" fill="none" stroke="#2a7035" stroke-width="1.2" stroke-linecap="round" opacity="0.7"></path><circle cx="98" cy="28" r="4" fill="#ffffff"></circle><circle cx="99" cy="28" r="2.2" fill="#0b1a2a"></circle><circle cx="99.7" cy="27.2" r="0.8" fill="#ffffff"></circle><path d="M 106 33 Q 110 34 108 37" fill="none" stroke="#2a7035" stroke-width="1.4" stroke-linecap="round"></path></svg>
+            </span>
+        </div>
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:130px;letter-spacing:2px;font-weight:500;">© 2026 TypingMaster.com</div>
+    <div id="choose-label" style="font-size:18px;color:rgba(255,255,255,0.75);margin-top:18px;margin-bottom:40px;font-weight:500;">choose how you want to play</div>
+
+    <div style="display:flex;gap:32px;margin-bottom:48px;">
+        <div class="mode-card" data-mode="letters" style="
+                cursor:pointer; user-select:none;
+                width: 260px; padding: 30px 24px;
+                background: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.18) 0%, rgba(74,158,255,0.18) 35%, rgba(10,40,80,0.6) 100%);
+                border: 2px solid rgba(125,249,255,0.5);
+                border-radius: 22px;
+                box-shadow: 0 8px 32px rgba(74,158,255,0.35), inset 0 0 24px rgba(255,255,255,0.08);
+                text-align: center;
+                display: flex; flex-direction: column;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            ">
+            <div style="font-size:64px;margin-bottom:8px;">🔤</div>
+            <div style="font-size:30px;font-weight:800;letter-spacing:3px;margin-bottom:6px;">LETTERS</div>
+            <div style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:500;">
+                Single letters in bubbles.<br>
+                Start from the home row and unlock the full keyboard.<br>
+                Keep fingers on home row!
+            </div>
+            <div style="margin-top:14px;font-size:13px;letter-spacing:2px;color:#7df9ff;font-weight:700;">BEGINNER · LEVELS 1–11</div>
+            <div style="margin-top:auto;padding-top:18px;font-size:12px;letter-spacing:3px;color:#9fb6c4;font-weight:600;">HIT SPACE</div>
+        </div>
+
+        <div class="mode-card" data-mode="words" style="
+                cursor:pointer; user-select:none;
+                width: 260px; padding: 30px 24px;
+                background: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.18) 0%, rgba(200,130,255,0.18) 35%, rgba(40,15,80,0.6) 100%);
+                border: 2px solid rgba(200,130,255,0.5);
+                border-radius: 22px;
+                box-shadow: 0 8px 32px rgba(168,85,247,0.3), inset 0 0 24px rgba(255,255,255,0.08);
+                text-align: center;
+                display: flex; flex-direction: column;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            ">
+            <div style="font-size:64px;margin-bottom:8px;">✨</div>
+            <div style="font-size:30px;font-weight:800;letter-spacing:3px;margin-bottom:6px;">WORDS</div>
+            <div style="font-size:15px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:500;">
+                Type whole words to shatter bubbles.<br>
+                Flow-typing, combo chains, full skill ceiling.
+            </div>
+            <div style="margin-top:14px;font-size:13px;letter-spacing:2px;color:#d4a8ff;font-weight:700;">EXPERT · LEVELS 12–15</div>
+            <div style="margin-top:auto;padding-top:18px;font-size:12px;letter-spacing:3px;color:#9fb6c4;font-weight:600;">HIT ENTER</div>
+        </div>
+    </div>
+
+    <div style="font-size:14px;color:rgba(255,255,255,0.5);font-weight:500;letter-spacing:1px;">tap a mode to dive in</div>
+
+    <style>
+        .mode-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            border-color: rgba(255,255,255,0.85) !important;
+            box-shadow: 0 14px 40px rgba(125,249,255,0.45), inset 0 0 28px rgba(255,255,255,0.15) !important;
+        }
+    </style>
+    <style>
+        /* Keep foreground content above the fish layer */
+        #bubbles-start-overlay > *:not(#fish-layer) {
+            position: relative;
+            z-index: 1;
+        }
+      
+
+        50% {
+            transform: rotate(8deg);
+        }
+
+        }
+
+        .start-fish {
+            position: absolute;
+            left: -160px;
+            will-change: transform;
+            filter: drop-shadow(0 3px 8px rgba(0,30,60,0.45));
+            opacity: 0.9;
+        }
+
+            .start-fish .fish-bob {
+                display: inline-block;
+                will-change: transform;
+            }
+
+            .start-fish svg .tail {
+                transform-origin: 100% 50%;
+                transform-box: fill-box;
+                will-change: transform;
+            }
+
+            .start-fish svg .fin {
+                transform-origin: 50% 100%;
+                transform-box: fill-box;
+                will-change: transform;
+            }
+    </style>
+</div>
+
+
+
